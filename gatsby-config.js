@@ -1,17 +1,16 @@
 module.exports = {
-  siteMetadata: {
-    title: 'Gatsby + Node.js (TypeScript) API',
-  },
   plugins: [
+    `gatsby-plugin-image`,
+    `gatsby-plugin-sharp`,
     `gatsby-plugin-react-helmet`,
     {
-      resolve: `gatsby-plugin-manifest`,
+      resolve: `gatsby-plugin-google-fonts`,
       options: {
-        name: 'Gatsby + Node.js (TypeScript) API',
-        short_name: 'Gatsby + Node.js (TypeScript)',
-        start_url: '/',
-        icon: 'src/images/gatsby-icon.png',
-      },
-    },
+        fonts: [
+          `lato`
+        ],
+        display: 'swap'
+      }
+    }
   ],
-};
+}
