@@ -11,6 +11,17 @@ module.exports = {
         ],
         display: 'swap'
       }
-    }
+    },
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: `Marbl`,
+        short_name: `Marbl`,
+        start_url: `/`,
+        background_color: `#fff`,
+        display: `standalone`,
+        icon: `src/img/favicon.svg`
+      },
+    },
   ],
 }

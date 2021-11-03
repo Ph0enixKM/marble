@@ -1,5 +1,6 @@
 import React from "react"
 import { StaticImage } from 'gatsby-plugin-image';
+import { Helmet } from "react-helmet";
 
 const styles = {
   logo: {
@@ -20,10 +21,17 @@ const styles = {
 
 export default function Home() {
   return (
-    <div style={styles.logo}>
-      <StaticImage src={'../img/marbl.svg'} placeholder='blurred'/>
-      <div style={styles.subtitles}>
-        Great things are coming
+    <div>
+      <Helmet>
+        <title>Marbl</title>
+        <meta name="theme-color" content="#fff" media="(prefers-color-scheme: light)" />
+        <meta name="theme-color" content="#000" media="(prefers-color-scheme: dark)" />
+      </Helmet>
+      <div style={styles.logo}>
+        <StaticImage src={'../img/marbl.svg'} placeholder='blurred'/>
+        <div style={styles.subtitles}>
+          Great things are coming
+        </div>
       </div>
     </div>
   )
