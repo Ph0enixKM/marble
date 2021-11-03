@@ -12,7 +12,7 @@ const styles = {
   subtitles: {
     fontFamily: 'Lato',
     textAlign: 'center',
-    fontSize: '24px',
+    fontSize: '3vw',
     color: 'rgb(72,72,72)',
     fontWeight: '400'
   }
@@ -21,7 +21,7 @@ const styles = {
 export default function Home() {
   return (
     <div style={styles.logo}>
-      <StaticImage src={'../img/marbl.jpeg'} placeholder='blurred'/>
+      <StaticImage src={'../img/marbl.svg'} placeholder='blurred'/>
       <div style={styles.subtitles}>
         Great things are coming
       </div>
