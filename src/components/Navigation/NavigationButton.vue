@@ -3,8 +3,8 @@ import { reactive } from 'vue';
 import { RouterLink } from 'vue-router';
 
 const props = defineProps<{
-    name: String,
-    path: String
+    name: string,
+    path: string
 }>();
 
 </script>

@@ -2,9 +2,8 @@
   "name": "marbl",
   "version": "0.0.0",
   "scripts": {
-    "start": "vite",
     "dev": "vite",
-    "build": "vue-tsc --noEmit && vite build",
+    "build": "vue-tsc --noEmit --allowJs && vite build",
     "preview": "vite preview --port 5050",
     "typecheck": "vue-tsc --noEmit"
   },

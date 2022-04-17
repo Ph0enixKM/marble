@@ -1,9 +1,9 @@
 <script setup lang="ts">
 const props = defineProps<{
-    name: String,
-    background: String,
-    description: String,
-    icon: String
+    name: string,
+    background: string,
+    description: string,
+    icon: string
 }>();
 </script>
 
