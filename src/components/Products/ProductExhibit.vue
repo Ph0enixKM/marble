@@ -38,6 +38,8 @@ const cards = reactive([
 
 @media only screen and (min-width: 768px)
     .root
-        margin-top: calc(50vh - 70px)
-        transform: translate(0, -50%)
+        position: absolute
+        left: 50vw
+        top: 50vh
+        transform: translate(-50%, -50%)
 </style>
