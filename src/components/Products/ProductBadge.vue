@@ -37,7 +37,7 @@ const props = defineProps<{
 
 .description
     font-family: 'Montserrat',
-    font-size: 12px
+    font-size: 10px
     font-weight: 300
     text-transform: uppercase
     transform: translate(0, -5px)

@@ -4,7 +4,7 @@ import { reactive } from 'vue'
 const cards = reactive([
     {
         name: 'Flame',
-        description: 'Highest low level language',
+        description: 'The language',
         background: 'linear-gradient(90deg, #F68407, #A71439)',
         icon: '/flame.png'
     },
@@ -25,11 +25,14 @@ const cards = reactive([
 
 <template lang="pug">
 .root
-    ProductBadge(v-for="card in cards" v-bind="card")
+    .background
+            template(v-for="card in cards" :key="card.name")
+                ProductBadge(v-bind="card")
 </template>
 
 <style scoped lang="sass">
-.root
+.background
+    display: inline-block
     margin-top: 10px
     padding: 20px
     border-radius: 20px
@@ -37,9 +40,9 @@ const cards = reactive([
     text-align: center
 
 @media only screen and (min-width: 768px)
-    .root
-        position: absolute
+    .background
+        position: absolute   
         left: 50vw
-        top: 50vh
+        top: calc(50vh - 70px)
         transform: translate(-50%, -50%)
 </style>

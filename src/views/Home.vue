@@ -6,3 +6,6 @@ import ProductExhibit from '@/components/Products/ProductExhibit.vue'
 main
     ProductExhibit
 </template>
+
+<style scoped lang="sass">
+</style>
