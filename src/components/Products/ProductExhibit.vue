@@ -32,6 +32,7 @@ const cards = reactive([
 
 <style scoped lang="sass">
 .background
+    width: 90vw
     display: inline-block
     margin-top: 10px
     padding: 20px
