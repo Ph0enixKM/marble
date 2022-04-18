@@ -31,7 +31,6 @@ const props = defineProps<{
         height: 70px
 
 .title
-    margin-top: 20px
     font-family: 'BrandonTextW01-Bold'
     font-weight: 800
     font-size: 40px
