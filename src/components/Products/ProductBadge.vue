@@ -19,6 +19,7 @@ const props = defineProps<{
 .root
     display: inline-block
     margin-left: 20px
+    margin-top: 20px
     text-align: center
 
 .background
