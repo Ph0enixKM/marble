@@ -8,7 +8,7 @@ const props = defineProps<{
 </script>
 
 <template lang="pug">
-.root
+.badge
     .background(:style="{ background }")
         img.icon(:src="icon")
     .title {{name}}
@@ -16,9 +16,9 @@ const props = defineProps<{
 </template>
 
 <style scoped lang="sass">
-.root
+.badge
     display: inline-block
-    margin-left: 20px
+    margin-left: 40px
     margin-top: 20px
     text-align: center
 
@@ -37,7 +37,7 @@ const props = defineProps<{
 
 .description
     font-family: 'Montserrat',
-    font-size: 10px
+    font-size: 12px
     font-weight: 300
     text-transform: uppercase
     transform: translate(0, -5px)
