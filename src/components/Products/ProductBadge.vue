@@ -1,16 +1,20 @@
 <script setup lang="ts">
-const props = defineProps<{
+const props = withDefaults(defineProps<{
     name: string,
     background: string,
     description: string,
-    icon: string
-}>();
+    icon: string,
+    href: string
+}>(), {
+    href: '#'
+});
 </script>
 
 <template lang="pug">
 .badge
-    .background(:style="{ background }")
-        img.icon(:src="icon")
+    a(:href="href")
+        .background(:style="{ background }")
+            img.icon(:src="icon")
     .title {{name}}
     .description {{description}}
 </template>

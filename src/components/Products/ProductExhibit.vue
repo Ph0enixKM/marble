@@ -12,7 +12,8 @@ const cards = reactive([
         name: 'Amber',
         description: 'The one compiled to Bash',
         background: 'linear-gradient(90deg, #F9B00D, #D61F58)',
-        icon: '/amber.png'
+        icon: '/amber.png',
+        href: '//amber.marbl.cc'
     },
     {
         name: 'Illiade',
