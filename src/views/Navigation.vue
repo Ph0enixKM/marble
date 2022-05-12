@@ -1,22 +1,12 @@
 <script setup>
-import NavigationButton from '@/components/Navigation/NavigationButton.vue'
+import Navigation from '@/components/organisms/navigation/Navigation.vue'
+import NavigationAmber from '@/components/organisms/navigation/variants/NavigationAmber.vue'
 </script>
 
 <template lang="pug">
-.root
-    picture
-        source(srcset="/marbl-dark.svg" media="(prefers-color-scheme: dark)")
-        img.logo(src="/marbl.svg")
-    NavigationButton(name="contact" path="#")
-    NavigationButton(name="about" path="#")
-</template>
+template(v-if="$route.path == '/amber'")
+    NavigationAmber
 
-<style lang="sass" scoped>
-.root
-    padding: 20px
-    height: 70px
-.logo
-    width: 100px
-    display: inline-block
-    vertical-align: middle
-</style>
+template(v-else)
+    Navigation
+</template>

@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import { RouterLink } from 'vue-router';
 const props = withDefaults(defineProps<{
     name: string,
     background: string,
@@ -12,7 +13,7 @@ const props = withDefaults(defineProps<{
 
 <template lang="pug">
 .badge
-    a(:href="href")
+    RouterLink(:to="href")
         .background(:style="{ background }")
             img.icon(:src="icon")
     .title {{name}}
@@ -40,7 +41,7 @@ const props = withDefaults(defineProps<{
     font-size: 40px
 
 .description
-    font-family: 'Montserrat',
+    font-family: 'Montserrat'
     font-size: 12px
     font-weight: 300
     text-transform: uppercase

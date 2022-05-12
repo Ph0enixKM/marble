@@ -1,25 +1,27 @@
 <script setup lang="ts">
-import ProductBadge from '@/components/Products/ProductBadge.vue'
+import ProductBadge from '@/components/atoms/products/ProductBadge.vue'
 import { reactive } from 'vue'
 const cards = reactive([
     {
         name: 'Flame',
         description: 'The language',
         background: 'linear-gradient(90deg, #F68407, #A71439)',
-        icon: '/flame.png'
+        icon: '/flame.png',
+        href: '#'
     },
     {
         name: 'Amber',
         description: 'The one compiled to Bash',
         background: 'linear-gradient(90deg, #F9B00D, #D61F58)',
         icon: '/amber.png',
-        href: '//amber.marbl.cc'
+        href: '/amber'
     },
     {
         name: 'Illiade',
         description: 'The funky IDE',
         background: 'linear-gradient(135deg, #370253, #AB1889)',
-        icon: '/illiade.png'
+        icon: '/illiade.png',
+        href: '#'
     }
 ])
 </script>
