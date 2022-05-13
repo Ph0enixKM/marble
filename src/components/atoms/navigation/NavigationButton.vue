@@ -5,7 +5,7 @@ import { RouterLink } from 'vue-router';
 const props = defineProps<{
     name: string,
     path: string,
-    color: string
+    color: string | null
 }>();
 
 const color = props.color || 'auto';
