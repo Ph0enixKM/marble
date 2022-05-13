@@ -2,14 +2,7 @@
 import { reactive, onMounted } from 'vue'
 import { createPayment } from '@/util/rest'
 
-// Extend window type with global Stripe
-declare global {
-    interface Window {
-        Stripe: any
-    }
-}
-
-const stripe = window.Stripe('pk_test_51KyzN8CF8LXgMIUQOHz3B5xOQrRHYPe8frOvjL7NIRLtYB3LBXjUOjA3JnqifyFttvYKhnpB54FPlYYuEcnEc3mg008HErZxiE')
+const stripe = (window as any).Stripe('pk_test_51KyzN8CF8LXgMIUQOHz3B5xOQrRHYPe8frOvjL7NIRLtYB3LBXjUOjA3JnqifyFttvYKhnpB54FPlYYuEcnEc3mg008HErZxiE')
 const cannotPay = reactive({ value: false });
 const elements = stripe.elements()
 const amount = 99

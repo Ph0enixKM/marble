@@ -23,8 +23,8 @@ class Request {
         })
     }
 
-    async post(path: string, body: BodyInit | null) {
-        const result = await this.fetcher(path, 'POST', body)
+    async post(path: string, body: object | null) {
+        const result = await this.fetcher(path, 'POST', body as BodyInit)
         return result.json()
     }
 
