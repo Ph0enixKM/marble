@@ -16,7 +16,7 @@ app.post('/api/pay', async (req, res) => {
         currency: 'usd',
         payment_method_types: ['card'],
     })
-    res.json({client_secret: intent.client_secret})
+    res.json({ clientSecret: intent.client_secret })
 })
 
 module.exports = app
