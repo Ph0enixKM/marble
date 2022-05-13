@@ -5,7 +5,7 @@ import NavigationButton from '@/components/atoms/navigation/NavigationButton.vue
 <template lang="pug">
 span
     a.link(href="//amber.marbl.cc") Docs
-    NavigationButton(name="Donate" path="/donate" color="white")
+    //- NavigationButton(name="Donate" path="/donate" color="white")
 </template>
 
 <style lang="sass">
