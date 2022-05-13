@@ -13,7 +13,7 @@ app.post('/api/pay', async (req, res) => {
     const { amount } = req.body
     const intent = await stripe.paymentIntents.create({
         amount,
-        currency: 'pln',
+        currency: 'usd',
         payment_method_types: ['card'],
     })
     res.json({client_secret: intent.client_secret})
