@@ -10,6 +10,8 @@ declare global {
 }
 
 const stripe = window.Stripe('pk_test_51KyzN8CF8LXgMIUQOHz3B5xOQrRHYPe8frOvjL7NIRLtYB3LBXjUOjA3JnqifyFttvYKhnpB54FPlYYuEcnEc3mg008HErZxiE')
+const cannotPay = reactive({ value: false });
+const elements = stripe.elements()
 const amount = 99
 const paymentRequest = stripe.paymentRequest({
     currency: 'usd',
@@ -21,9 +23,6 @@ const paymentRequest = stripe.paymentRequest({
         amount
     }
 })
-
-const cannotPay = reactive({ value: false });
-const elements = stripe.elements()
 const paymentButton = elements.create('paymentRequestButton', {
     paymentRequest
 })
