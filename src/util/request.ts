@@ -1,6 +1,5 @@
 class Request {
     isProduction: boolean
-    port: number
 
     constructor() {
         this.isProduction = process.env.NODE_ENV === 'production'
