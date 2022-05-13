@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "scripts": {
     "dev": "concurrently 'vite' 'nodemon backend/app.js'",
-    "build": "concurrently 'vue-tsc --noEmit --allowJs && vite build' 'nodemon backend/app.js'",
+    "build": "vue-tsc --noEmit --allowJs && vite build",
     "preview": "vite preview --port 5050",
     "typecheck": "vue-tsc --noEmit"
   },
