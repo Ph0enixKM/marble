@@ -2,6 +2,7 @@
   "name": "marbl",
   "version": "0.0.0",
   "scripts": {
+    "vercel-dev": "vite --port $PORT",
     "dev": "vite",
     "build": "vue-tsc --noEmit --allowJs && vite build",
     "preview": "vite preview --port 5050",
