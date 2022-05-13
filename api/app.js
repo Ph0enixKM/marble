@@ -5,18 +5,18 @@ const app = express()
 app.use(express.json())
 app.use(express.urlencoded({ extended: false }))
 
-app.get('/', (req, res) => {
+app.get('/api/', (req, res) => {
     res.json({ message: 'Welcome to Marbl API' })
 })
 
-app.post('/pay', async (req, res) => {
+app.post('/api/pay', async (req, res) => {
     const { amount } = req.body
     const intent = await stripe.paymentIntents.create({
         amount,
         currency: 'pln',
         payment_method_types: ['card'],
-    });
-    res.json({client_secret: intent.client_secret});
+    })
+    res.json({client_secret: intent.client_secret})
 })
 
-app.listen(8080, () => console.log('listenning'))
+module.exports = app

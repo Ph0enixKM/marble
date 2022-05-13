@@ -3,14 +3,13 @@ class Request {
     port: number
 
     constructor() {
-        this.port = 8080
         this.isProduction = process.env.NODE_ENV === 'production'
     }
 
     private url(path: string): string {
         if (this.isProduction)
-            return `https://marbl.cc/:${this.port}${path}`
-        return `localhost:${this.port}${path}`
+            return `https://marbl.cc/api/${path}`
+        return `localhost:3000/api/${path}`
     }
 
     private fetcher(path: string, method: string, body: BodyInit | null = null) {
