@@ -21,7 +21,7 @@ import NavigationMenu from '@/components/molecules/navigation/NavigationMenu.vue
     z-index: 100
     background: var(--color-background)
 .logo
-    width: 100px
+    height: 30px
     display: inline-block
     vertical-align: middle
 
