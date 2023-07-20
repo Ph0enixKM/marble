@@ -7,8 +7,8 @@ import NavigationMenu from '@/components/molecules/navigation/NavigationMenu.vue
 .root
     RouterLink(to="/")
         picture
-            source(srcset="/marbl-dark.svg" media="(prefers-color-scheme: dark)")
-            img.logo(src="/marbl.svg")
+            source(srcset="/marble-dark.svg" media="(prefers-color-scheme: dark)")
+            img.logo(src="/marble.svg")
     NavigationMenu.menu
 </template>
 

@@ -7,7 +7,7 @@ import NavigationMenuAmber from '@/components/molecules/navigation/variants/Navi
 .root
     RouterLink(to="/")
         picture
-            img.logo(src="/marbl-logo-white.svg")
+            img.logo(src="/marble-logo-white.svg")
     NavigationMenuAmber.menu
 </template>
 

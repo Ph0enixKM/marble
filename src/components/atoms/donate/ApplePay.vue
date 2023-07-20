@@ -12,7 +12,7 @@ const paymentRequest = stripe.paymentRequest({
     requestPayerName: true,
     requestPayerEmail: true,
     total: {
-        label: 'Marbl Donation',
+        label: 'Marble Donation',
         amount
     }
 })

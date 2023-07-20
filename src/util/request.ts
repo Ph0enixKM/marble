@@ -7,7 +7,7 @@ class Request {
 
     private url(path: string): string {
         if (this.isProduction)
-            return `https://marbl.cc/api/${path}`
+            return `https://marble.software/api/${path}`
         return `localhost:3000/api/${path}`
     }
 
